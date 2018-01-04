@@ -67,7 +67,7 @@ namespace TEST_IO
 
 		//
 		// Used in method of read a number 
-		private void SkipWhitespaces()
+		private void SkipWhiteSpaces()
 		{
 			while (!_check && IsWhiteSpace(CurrentChar())) _pos++;
 		}
@@ -101,7 +101,7 @@ namespace TEST_IO
 		{
 			var neg = false;
 			int res = 0;
-			SkipWhitespaces();
+			SkipWhiteSpaces();
 			if (!_check && CurrentChar() == '-')					// Check negative number
 			{
 				neg = true;
@@ -123,7 +123,7 @@ namespace TEST_IO
 		{
 			var neg = false;
 			long res = 0;
-			SkipWhitespaces();
+			SkipWhiteSpaces();
 			if (!_check && CurrentChar() == '-')                    // Check negative number
 			{
 				neg = true;
@@ -158,7 +158,7 @@ namespace TEST_IO
 		/// <returns></returns>
 		public double NextDouble()
 		{
-			SkipWhitespaces();
+			SkipWhiteSpaces();
 			var builder = new StringBuilder();
 			while (!_check && !IsWhiteSpace(CurrentChar()))
 			{
@@ -196,7 +196,10 @@ namespace TEST_IO
 			for (int i = 0; i < size; i++) res[i] = NextDouble();
 			return res;
 		}
-		
+		/// <summary>
+		/// Reads the next int matrix with paramenters are row number and column number
+		/// </summary>
+		/// <returns></returns>
 		public int[][] NextIntMatrix(int row,int col)
 		{
 			var res = new int[row][];
