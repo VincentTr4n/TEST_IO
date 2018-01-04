@@ -79,15 +79,10 @@ namespace TEST_IO
 			while (!_check && IsEndOfLine(CurrentChar())) _pos++;
 		}
 
-		private static bool IsWhiteSpace(char c)
-		{
-			return c == ' ' || c == '\t' || c == '\n' || c == '\r';
-		}
+		private static bool IsWhiteSpace(char c) => c == ' ' || c == '\t' || c == '\n' || c == '\r';
 
-		private static bool IsEndOfLine(char c)
-		{
-			return c == '\n' || c == '\r';
-		}
+		private static bool IsEndOfLine(char c) => c == '\n' || c == '\r';
+
 		/// <summary>
 		/// Read a character
 		/// </summary>
