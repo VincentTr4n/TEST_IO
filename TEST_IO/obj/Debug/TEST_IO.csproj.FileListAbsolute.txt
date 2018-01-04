@@ -1,0 +1,7 @@
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\bin\Debug\TEST_IO.exe.config
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\bin\Debug\TEST_IO.exe
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\bin\Debug\TEST_IO.pdb
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\obj\Debug\TEST_IO.csprojResolveAssemblyReference.cache
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\obj\Debug\TEST_IO.exe
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\obj\Debug\TEST_IO.pdb
+D:\MyWorkSpace\CodeC#\TEST_IO\TEST_IO\bin\Debug\txt1.txt
