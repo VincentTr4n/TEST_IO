@@ -5,13 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Threading;
 
 namespace TEST_IO
 {
-	public class IOProcess
+	public class IOProcess :IDisposable
 	{
 		private TextReader _reader;
 		private readonly static TextWriter _out = Console.Out;
@@ -210,12 +209,17 @@ namespace TEST_IO
 		/// Releases all resource used by TextReader object 
 		/// </summary>
 		/// <returns></returns>
+		//public void Dispose()
+		//{
+		//	if (_closeReader) _reader.Close();
+		//}
 		public void Dispose()
 		{
-			if (_closeReader) _reader.Close();
+			((IDisposable)_reader).Dispose();
 		}
 
 		public static void Out(object obj) { _out.WriteLine(obj); }
+
 	}
 
 	public class TestRunTime
