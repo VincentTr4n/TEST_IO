@@ -206,20 +206,22 @@ namespace TEST_IO
 			return res;
 		}
 		/// <summary>
+		/// Write output in console
+		/// </summary>
+		/// <returns></returns>
+		public static void Out(object obj) { _out.WriteLine(obj); }
+
+		/// <summary>
 		/// Releases all resource used by TextReader object 
 		/// </summary>
 		/// <returns></returns>
-		//public void Dispose()
-		//{
-		//	if (_closeReader) _reader.Close();
-		//}
+		#region IDisposable Support
 		public void Dispose()
 		{
-			((IDisposable)_reader).Dispose();
+			if (_closeReader)
+				((IDisposable)_reader).Dispose();
 		}
-
-		public static void Out(object obj) { _out.WriteLine(obj); }
-
+		#endregion
 	}
 
 	public class TestRunTime
